@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Div Iterate</title>
+</head>
+<body>
+	<!-- <div th:each="student: user">
+	Uname : <span th:text="${student.uname}"></span>
+	Pwd : 
+	</div> -->
+	<div th:each="us, stats : ${user}">
+		<!-- <div th:text="${stats.index + 1}"></div> -->
+		<div th:text="${us.uname}"></div>
+		<div th:text="${us.pwd}"></div>
+	</div>
+</body>
+</html>

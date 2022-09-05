@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Index</title>
+</head>
+<body>
+	<form name="f1" action="disp-data" method="post">
+		<input type="text" value="ram" id="t1" name="t1"> <input type="text"
+			value="123" id="t2"  name="t2"> <input type="button" value="click"
+			onclick="dispData()">
+	</form>
+
+	<script src="@{static/Jquery-ajax-js v3.6/jquery.min.js}"></script>
+	<script type="text/javascript">
+		function dispData() {
+			//alert('jquery works');
+			document.f1.action='disp-data';
+			document.f1.submit();
+			//$('.f1').submit();
+		}
+	</script>
+</body>
+</html>
